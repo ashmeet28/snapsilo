@@ -1,14 +1,14 @@
 import './App.scss'
 import SignInScene from './SignInScene.jsx'
-import LoaderDiv from './LoaderDiv'
+import { useState } from 'react';
 
 function App() {
-  return (
-    <>
-      {/* <LoaderDiv /> */}
-      < SignInScene />
-    </>
-  )
+  const [currentScene, setCurrentScene] = useState('SignIn');
+
+  switch (currentScene) {
+    case "SignIn":
+      return < SignInScene />
+  }
 }
 
 export default App
