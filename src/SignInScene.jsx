@@ -16,6 +16,9 @@ function SignInScene() {
                 <br />
                 <button>Sign in</button>
             </div>
+            <div id='div_7294'>
+                <button>Go back</button>
+            </div>
         </>
     )
 }
