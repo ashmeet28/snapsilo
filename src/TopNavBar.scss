@@ -8,11 +8,14 @@
 }
 
 #div_5937 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
     button {
         background-color: transparent;
         border: none;
         font-size: 1.5em;
-        margin: 0px 4px;
         padding: 8px;
     }
 
@@ -21,4 +24,10 @@
         border-radius: 5px;
     }
 
+}
+
+#div_9510 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
