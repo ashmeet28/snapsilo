@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import './HomeScene.scss'
 
-function HomeScene({ onGoBack, onSignIn }) {
+import TopNavBar from './TopNavBar.jsx'
+
+function HomeScene({ onNavBtnClick }) {
     return (
         <>
-            <h1>This is Home Scene</h1>
+            <TopNavBar onNavBtnClick={onNavBtnClick} />
         </>
     )
 }

@@ -7,19 +7,26 @@ import SignInScene from './SignInScene.jsx'
 import HomeScene from './HomeScene.jsx'
 
 function App() {
-  const [currentState, setCurrentState] = useState('SignInScene')
+  const [currentState, setCurrentState] = useState('HomeScene')
+
+  function handleHomeSceneNav(message) {
+    switch (message) {
+      case "sign in":
+        setCurrentState("SignInScene")
+    }
+  }
 
   switch (currentState) {
+    case "HomeScene":
+      return (
+        <>
+          <HomeScene onNavBtnClick={handleHomeSceneNav} />
+        </>
+      )
     case "SignInScene":
       return (
         <>
           <SignInScene onGoBack={() => setCurrentState("HomeScene")} />
-        </>
-      )
-    case "HomeScene":
-      return (
-        <>
-          <HomeScene />
         </>
       )
   }
