@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.scss'
 
 import SignInScene from './SignInScene.jsx'
+import SignUpScene from './SignUpScene.jsx'
+
 import HomeScene from './HomeScene.jsx'
 
 function App() {
@@ -11,8 +13,12 @@ function App() {
 
   function handleHomeSceneNav(message) {
     switch (message) {
-      case "sign in":
+      case "Sign in":
         setCurrentState("SignInScene")
+        break
+      case "Sign up":
+        setCurrentState("SignUpScene")
+        break
     }
   }
 
@@ -27,6 +33,12 @@ function App() {
       return (
         <>
           <SignInScene onGoBack={() => setCurrentState("HomeScene")} />
+        </>
+      )
+    case "SignUpScene":
+      return (
+        <>
+          <SignUpScene onGoBack={() => setCurrentState("HomeScene")} />
         </>
       )
   }

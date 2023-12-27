@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './SignInScene.scss'
 
+import SnapSiloLogo from './assets/main_logo.svg'
 import MessageScene from './MessageScene.jsx'
 
 function SignInScene({ onGoBack, onSignIn }) {
@@ -13,7 +14,10 @@ function SignInScene({ onGoBack, onSignIn }) {
     if (!isTryingToSignIn) {
         return (
             <>
-                <h1 id='h1_1941'>SnapSilo</h1>
+                <div id='div_1739'>
+                    <img src={SnapSiloLogo} alt="Main Logo" />
+                    <h1>SnapSilo</h1>
+                </div>
                 <div id='div_9279'>
                     <label htmlFor="input_8291">Username</label>
                     <br />

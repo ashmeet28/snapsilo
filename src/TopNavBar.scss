@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0px 10px;
 }
 
 #div_5937 {
@@ -19,15 +20,14 @@
         padding: 8px;
     }
 
-    #button_1946 {
+    button:nth-child(2) {
         border: 1px solid #272727;
         border-radius: 5px;
     }
-
 }
 
 #div_9510 {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }

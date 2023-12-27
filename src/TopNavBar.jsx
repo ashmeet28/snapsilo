@@ -7,12 +7,12 @@ function TopNavBar({ onNavBtnClick }) {
         <>
             <div id='div_7206'>
                 <div id='div_9510'>
-                    <img src={SnapSiloLogo} alt="" />
+                    <img src={SnapSiloLogo} alt="Main Logo" />
                     <h1>SnapSilo</h1>
                 </div>
                 <div id='div_5937'>
-                    <button onClick={() => onNavBtnClick("sign in")}>Sign in</button>
-                    <button id='button_1946' onClick={() => onNavBtnClick("sign up")}>Sign up</button>
+                    <button onClick={() => onNavBtnClick("Sign in")}>Sign in</button>
+                    <button onClick={() => onNavBtnClick("Sign up")}>Sign up</button>
                 </div>
             </div>
         </>
