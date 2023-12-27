@@ -11,13 +11,15 @@
 #div_5937 {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 
     button {
         background-color: transparent;
         border: none;
         font-size: 1.5em;
         padding: 8px;
+        margin: 0px;
+        box-sizing: border-box;
     }
 
     button:nth-child(2) {
@@ -30,4 +32,41 @@
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+#div_8106 {
+    display: flex;
+
+    img {
+        width: 48px;
+    }
+}
+
+#div_6815 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    #div_7206 {
+        display: block;
+    }
+
+    #div_6815 {
+        border-style: solid;
+        border-color: #272727;
+        border-width: 0px 0px 1px 0px;
+    }
+
+    #div_5937 {
+        flex-direction: column;
+        padding: 10px 0px;
+
+        button {
+            width: 100%;
+            border: 1px solid #272727;
+            border-radius: 5px;
+        }
+    }
 }
