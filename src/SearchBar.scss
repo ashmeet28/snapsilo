@@ -1,0 +1,30 @@
+#div_7120 {
+    width: 100%;
+    max-width: 600px;
+    margin: 0px auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#div_0149 {
+    display: flex;
+    border-style: solid;
+    border-color: #272727;
+    border-width: 1px;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    img {
+        width: 40px;
+        opacity: 0.5;
+    }
+
+    input {
+        width: 100%;
+        box-sizing: border-box;
+        border: none;
+        font-size: 1.17em;
+        outline: none;
+    }
+
+}
